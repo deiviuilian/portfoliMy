@@ -1,0 +1,444 @@
+:root {
+    --bg-primary: #0a0a14;
+    --bg-secondary: #12121e;
+    --accent-primary: #00f4ff;
+    --accent-secondary: #7600ff;
+    --text-primary: #e2e2f0;
+    --text-secondary: #a0a0b0;
+    --dark-overlay: rgba(5, 5, 15, 0.7);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rajdhani', 'Segoe UI', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 10px;
+}
+
+.container {
+    text-align: center;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 0 30px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #ff6b6b;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.gender-choice {
+    margin-bottom: 25px;
+}
+
+.ocasiao-choice {
+    margin-bottom: 25px;
+}
+
+
+.btn {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: row;
+    width: 140px;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 3px 6px black;
+}
+
+.btn:hover {
+    background-color: #ff5252;
+    transform: scale(1.05);
+    box-shadow: none;
+}
+
+.btn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.wheel-container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 15px auto;
+    display: none;
+}
+
+.wheel {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: none;
+    transform: rotate(0deg);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.wheel-text {
+    position: absolute;
+    transform-origin: center;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+.wheel-item span {
+    transform: rotate(90deg);
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+.marker {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #332e2e;
+    top: -16px;
+    left: 45%;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    z-index: 2;
+    rotate: 180deg;
+}
+
+.marker.animando {
+    animation: animacaoSeta 0.35s linear infinite;
+}
+
+.wheel-item {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.box1 {
+    border-top: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 100px solid #f6685e;
+    border-left: 100px solid #f6685e;
+}
+
+.box5 {
+    border-top: 100px solid #e91e63;
+    border-right: 100px solid #e91e63;
+    border-bottom: 100px solid transparent;
+    border-left: 100px solid transparent;
+}
+
+.box2 {
+    border-top: 100px solid #9c27b0;
+    border-right: 100px solid transparent;
+    border-bottom: 100px solid transparent;
+    border-left: 100px solid #9c27b0;
+    left: 50%;
+}
+
+.box6 {
+    border-top: 100px solid transparent;
+    border-right: 100px solid #673ab7;
+    border-bottom: 100px solid #673ab7;
+    border-left: 100px solid transparent;
+    left: 50%
+}
+
+.box4 {
+    border-top: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 100px solid #2196f3;
+    border-left: 100px solid #2196f3;
+    top: 50%;
+    left: 50%;
+}
+
+.box8 {
+    border-top: 100px solid #34399d;
+    border-right: 100px solid #34399d;
+    border-bottom: 100px solid transparent;
+    border-left: 100px solid transparent;
+    top: 50%;
+    left: 50%;
+}
+
+.box3 {
+    border-top: 100px solid #009688;
+    border-right: 100px solid transparent;
+    border-bottom: 100px solid transparent;
+    border-left: 100px solid #009688;
+    top: 50%;
+}
+
+.box7 {
+    border-top: 100px solid transparent;
+    border-right: 100px solid #978a1c;
+    border-bottom: 100px solid #978a1c;
+    border-left: 100px solid transparent;
+    top: 50%;
+}
+
+.spin-btn {
+    margin: 20px;
+}
+
+.back-btn{
+    margin-bottom: 10px;
+    background-color: black;
+    width: 50px !important;
+    position: relative;
+    left: 155px;
+}
+
+.roleta{
+    left: 195px !important;
+}
+
+.text-gender, .text-ocasiao{
+    margin: 0 !important;
+    color: red !important;
+}
+
+.result {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff6b6b;
+    display: none;
+}
+
+.reset-btn {
+    margin: 10px;
+    background-color: #6b6bff;
+    display: none;
+}
+
+.reset-btn:hover {
+    background-color: #5252ff;
+}
+
+@keyframes animacaoSeta {
+    0% { transform: rotate(0deg)}
+    25% { transform: rotate(-15deg)}
+    75% { transform: rotate(15deg)}
+    100% { transform: rotate(0deg)}
+}
+
+.presentes {
+    position: absolute;
+    z-index: 999;
+    font-size: 27px;
+    font-weight: bold;
+    color: white;
+}
+
+.btnRoleta {
+    position: absolute;
+    box-shadow: 0 6px 10px rgba(0, 0, 0);
+    color: white;
+    background-color: #ffffff;
+    border: 15px solid #ffffff;
+    cursor: pointer;
+    top: 45%;
+    left: 45%;
+    font-size: 35px;
+    border-radius: 50%;
+    height: 42px;
+    width: 42px;
+    text-align: center;
+}
+
+.play {
+    z-index: 999;
+}
+
+.aspiral {
+    position: relative;
+    width: 50px;
+    top: -18px;
+    height: 50px;
+    left: -20px;
+}
+
+.man{
+    background-color: #0080ff !important;
+}
+
+.woman{
+    background-color: #e91ee9 !important;
+}
+
+
+.imgsimb {
+    width: 30px;
+    height: 25px;
+}
+.escolha{
+    display: flex;    
+}
+
+@media screen and (max-width: 768px) {
+    .wheel-container {     
+        margin-top: 20px;
+    }
+
+    .gender-choice {
+        margin-bottom: 0px;
+    }
+
+    .escolha {
+        margin-bottom: 15px;
+    }
+
+    body{
+        padding: 0px;
+        overflow: hidden;
+    }
+
+    .container{
+        scale: 0.7;
+        position: relative;
+        top: -85px;
+    }
+}
+
+.h2ocasiao {
+    margin-bottom: 15px;
+}
+
+footer {
+    position: fixed;
+    border-width: 0px;
+    border-bottom-style: groove;
+    left: 0;
+    bottom: -9px;
+    width: 100%;
+    background-color: #676767f2;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px #e6bebe;
+    font-size: calc(0.5em + 0.5vw);
+    z-index: 1058;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-text {
+    text-shadow: 0px 0px #020202;
+}
+
+.footer-content {
+    position: relative;
+    z-index: 1;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--accent-primary);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.footer-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 16px;
+}
+
+.footer-link:hover {
+    color: var(--accent-primary);
+}
+
+.footer-text__source{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer-social {
+    margin: 20px 0;
+    display: flex;
+    gap: 15px;
+}
+
+.logoslabs{
+    width: 90px;
+    height: 29px;
+    position: relative;
+    top: 1px;
+    cursor: pointer;
+}
+
+.escolha-ocasiao {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ocasiaobtn {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    width: 290px !important;
+    height: 60px !important;
+    gap: 10px;
+    box-shadow: 1px 3px 6px black;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.back-btn:hover {
+    background-color: #000000;
+    transform: scale(1.05);
+    box-shadow: none;
+}
+
+.iconback {
+    rotate: 180deg;
+    font-size: 19px;
+}

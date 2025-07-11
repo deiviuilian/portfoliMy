@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deividi Marangoni | Portfólio | Desenvolvedor Full Stack</title>
+    <link rel="icon" href="img/profileimg.png" type="image/png">
+    <link rel="shortcut icon" href="img/profileimg.png" type="image/png">
+    <link href="css/style.css"  rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header com Navigation -->
+    <header id="header">
+        <nav>
+            <div class="divlogoclass">
+                <img class="logonav" src="img/logo.png" alt="LogoDev">
+                <a href="#home" class="logo">DEV<span>_FULLSTACK</span></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#experience">Experiência</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section com Parallax -->
+    <section id="home" class="hero">
+        <div class="parallax-container">
+            <div class="parallax-bg"></div>
+            <div class="grid-overlay"></div>
+        </div>     
+        <div class="hero-content">
+            <h3>Bem-vindo, eu sou</h3>
+            <h2 class="textname">DEIVIDI MARANGONI</h2>            
+            <h1>Desenvolvedor Full Stack</h1>
+            <p>Transformando ideias em experiências digitais inovadoras.</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">Ver Projetos</a>
+                <a href="archive/cv.pdf" class="btn" id="cv-download">Download CV</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre mim Section -->
+    <section id="about">
+        <h2 class="section-title">Sobre Mim</h2>
+        <div class="about">
+            <div class="about-img">
+                <img src="img/perfil2024.jpg" alt="Desenvolvedor Full Stack">
+            </div>
+            <div class="about-content">
+                <h3>Desenvolvedor Full Stack apaixonado por tecnologia</h3>
+                <p>Olá! Sou um desenvolvedor Full Stack com experiência em criar aplicações web modernas e responsivas. Minha paixão pela tecnologia me motiva a estar sempre aprendendo e aplicando as melhores práticas de desenvolvimento.</p>
+                <p>Com anos de experiência no mercado, já trabalhei em diversos projetos desafiadores que me permitiram dominar tanto o frontend quanto o backend. Acredito que a combinação de código limpo, design intuitivo e performance otimizada são essenciais para criar experiências digitais impressionantes.</p>
+                
+                <div class="skills">
+                    <h4>Habilidades Técnicas</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Angular</span>
+                        <span class="skill-tag">JQuery</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">SQLServer</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">APIs</span>
+                        <span class="skill-tag">IAs</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">PowerBI</span>
+                    </div>
+                </div>
+                
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/deividi-marangoni-98578914b/" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/deiviuilian" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:deividiuilian@gmail.com" class="social-link">
+                        <i class="far fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projetos Section -->
+    <section id="projects">
+        <h2 class="section-title">Meus Projetos</h2>
+        <div class="projects-grid">
+            <!-- Projeto 1 -->
+            <div class="project-card">              
+                <div class="project-img" data-gallery-id="contador" data-img-src="img/contador1.png">
+                    <img src="img/contador1.png" alt="Projeto 1">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Contagem Momentos</h3>
+                    <p class="project-desc">Projeto nível básico de programação, página de entreteinamento para contar o momento escolhido.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">PHP</span>
+                        <span class="project-tag">JavaScript</span>
+                        <span class="project-tag">JQuery</span>                      
+                    </div>
+                    <div class="project-links">
+                        <a href="contador" class="project-link" target="_blank">
+                            <i class="fas fa-link"></i> Acessar
+                        </a>                       
+                    </div>
+                </div>
+            </div>
+            <div class="project-gallery-hidden" data-gallery-id="contador">  
+                <img data-img-src="img/contador2.png">
+            </div>
+            <div class="project-card">             
+                <div class="project-img" data-gallery-id="roleta" data-img-src="img/roleta1.png">
+                    <img src="img/roleta1.png" alt="Projeto 2">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Roleta de Presentes</h3>
+                    <p class="project-desc">Projeto de nível básico de programação: página de entretenimento para sortear um presente.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">PHP</span>
+                        <span class="project-tag">JavaScript</span>
+                        <span class="project-tag">JQuery</span> 
+                    </div>
+                    <div class="project-links">
+                        <a href="yourgift" class="project-link" target="_blank">
+                            <i class="fas fa-link"></i> Acessar
+                        </a>                       
+                    </div>
+                </div>
+            </div>
+            <div class="project-gallery-hidden" data-gallery-id="roleta"> 
+                <img data-img-src="img/roleta2.png">
+            </div>
+            <div class="project-card">              
+                <div class="project-img" data-gallery-id="pokedex" data-img-src="img/pokedex1.png">
+                    <img src="img/pokedex1.png" alt="Projeto 3">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Pokedex</h3>
+                    <p class="project-desc">Projeto nível médio de programação, manipulação de angular e ionic para web e aplicativo.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Angular</span>
+                        <span class="project-tag">Ionic</span>                                            
+                    </div>
+                    <div class="project-links">
+                        <a href="mypokedex" class="project-link" target="_blank">
+                            <i class="fas fa-link"></i> Acessar
+                        </a>                       
+                    </div>
+                </div>
+            </div>
+            <div class="project-gallery-hidden" data-gallery-id="pokedex">               
+                <img data-img-src="img/pokedex2.png">             
+            </div>
+            <div class="project-card">              
+                <div class="project-img" data-gallery-id="drinkcards" data-img-src="img/drinkcards1.png">
+                    <img src="img/drinkcards1.png" alt="Projeto 4">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Jogo de Cartas</h3>
+                    <p class="project-desc">Projeto nível médio de programação, aplicativo de entreteinamento para Android.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">React</span>                                          
+                    </div>
+                    <div class="project-links">
+                        <a href="https://drive.google.com/file/d/120sBGoxWqvXAVwFvKYwwRo8741fZ0Eo3/view?usp=drive_link" class="project-link" target="_blank">
+                            <i class="fa-solid fa-download"></i> Download
+                        </a>                       
+                    </div>
+                </div>
+            </div>
+            <div class="project-gallery-hidden" data-gallery-id="drinkcards">           
+                <img data-img-src="img/drinkcards2.png">
+                <img data-img-src="img/drinkcards3.png">
+            </div>
+            <div class="project-card">              
+                <div class="project-img" data-gallery-id="loga" data-img-src="img/loga1.png">
+                    <img src="img/loga1.png" alt="Projeto 5">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Sistema de Gerenciamento</h3>
+                    <p class="project-desc">Projeto nível avançado de programação, sistema web de gestão, gerenciamento, controle e simplificar processos</p>
+                    <div class="project-tags">
+                        <span class="project-tag">PHP</span>
+                        <span class="project-tag">JavaScript</span>
+                        <span class="project-tag">JQuery</span> 
+                        <span class="project-tag">PostgreSQL</span>                       
+                    </div>                    
+                </div>
+            </div>
+            <div class="project-gallery-hidden" data-gallery-id="loga">            
+                <img data-img-src="img/loga2.png">
+            </div>
+        </div>
+    </section>
+
+    <div id="myModal" class="modal"> 
+        <img class="modal-content" id="img01">    
+        <div id="caption" class="caption"></div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <section id="experience">
+        <h2 class="section-title">Experiência Profissional</h2>
+        <div class="timeline">
+            <!-- Experiência 1 -->
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <div class="timeline-date">jun/2024 - abr/2025</div>
+                    <img class="lozad" src="./img/pafil.png" alt="Pafil" height="40" title="Pafil">
+                    <h3 class="timeline-title">Analista TI</h3>                    
+                    <p class="timeline-desc">
+                        • Suporte TI N1, N2, N3.<br>
+                        • Controle de Acessos.<br>
+                        • Parametrizações de sistemas.<br>
+                        • Elaboração de BI.<br>
+                        • Criação de processos BPM.<br>
+                        • Desenvolvimento e manutenção de sistema web de controle, administração de equipamentos, compras e contas TI.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Experiência 2 -->
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <div class="timeline-date">jan/2020 - jun/2024</div>
+                    <img class="lozad" src="./img/sanchez.png" alt="Sanchez" height="40" title="Sanchez">
+                    <h3 class="timeline-title">Desenvolvedor Full Stack</h3>
+                    <p class="timeline-desc">
+                        • Elaboração de relatórios e customizações.<br>
+                        • Controle de acessos.<br>
+                        • Parametrização de sistemas.<br>
+                        • Desenvolvimento e Manutenção de sistema web no controle de cobrança e negociações.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Experiência 3 -->
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <div class="timeline-date">jan/2016 - maio/2019</div>
+                    <img class="lozad" src="./img/brasilcenter.png" alt="BrasilCenter" height="40" title="BrasilCenter">
+                    <h3 class="timeline-title">Rep. Serviços Especializados</h3>
+                    <p class="timeline-desc">
+                        • Atuação na área jurídica.<br>
+                        • Tratamentos de processos.<br>
+                        • Elaboração de minutas.<br>
+                        • Suporte para Advogados.
+                    </p>
+                </div>
+            </div>  
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Entre em Contato</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-item-title">
+                        <i class="fas fa-map-marker-alt"></i> Localização
+                    </div>
+                    <div class="contact-item-desc">Ribeirão Preto/SP, Brasil</div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-item-title">
+                        <i class="fas fa-envelope"></i> E-mail
+                    </div>
+                    <div class="contact-item-desc">deividiuilian@gmail.com</div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-item-title">
+                        <i class="fas fa-phone"></i> Telefone
+                    </div>
+                    <div class="contact-item-desc">+55 (16) 99368-3906</div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-item-title">
+                        <i class="fa fa-thumbs-up"></i> Siga Me
+                    </div>
+                    <div class="footer-social">                       
+                        <a href="https://www.facebook.com/share/16YyP4Fy5Y/" target="_blank" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>               
+                        <a href="https://instagram.com/deividiuilian" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>  
+                    </div> 
+                </div>
+            </div>
+
+            <div class="contact-info"> 
+                <div class="contact-item-title">
+                    <i class="fa-solid fa-message"></i><h3>Fale comigo</h3>                        
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=5516993683906&text=Olá,%20vi%20seu%20portfólio%20e%20gostaria%20de%20conversar!" target="_blank" class="social-link buttonzap">
+                    <i class="fab fa-whatsapp"></i>
+                    <h4>Enviar via WhatsApp</h4>
+                </a>                        
+            </div>
+        </div>    
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <a href="#home" class="footer-logo">DEV_FULLSTACK</a>
+            
+            <div class="footer-links">
+                <a href="#home" class="footer-link">Home</a>
+                <a href="#about" class="footer-link">Sobre</a>
+                <a href="#projects" class="footer-link">Projetos</a>
+                <a href="#experience" class="footer-link">Experiência</a>
+                <a href="#contact" class="footer-link">Contato</a>
+            </div>
+            
+            <div class="footer-socialp">     
+                <a href="https://www.linkedin.com/in/deividi-marangoni-98578914b/" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/deiviuilian" target="_blank" class="social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:deividiuilian@gmail.com" class="social-link">
+                    <i class="far fa-envelope"></i>
+                </a>
+            </div>
+            
+            <div class="copyright">
+                &copy; 2025 Deividi Marangoni. Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>   
+    <script type="text/javascript" src="js/script.js"></script>	
+</body>
+</html>
+
+    
