@@ -1,3 +1,38 @@
+  const presentesHomem = {
+    "Bebida": "img/bebidas.png",
+    "Jogo": "img/jogo.png",
+    "Camisa": "img/camisa.png",
+    "Perfume": "img/perfume.png",
+    "Pix R$ 100": "img/pix.png",
+    "Colar": "img/colar.png",
+    "Chapéu": "img/chapeu.png",
+    "Pagar Ifood": "img/ifood.png"
+  };
+
+  const presentesMulher = {
+    "Bolsa": "img/bolsa.png",
+    "Jóia": "img/joia.png",
+    "Perfume": "img/perfume.png",
+    "Sapato/Roupa": "img/sapato_roupa.png",
+    "Pix R$ 100": "img/pix.png",
+    "Flor": "img/flor.png",
+    "Chocolate": "img/chocolates.png",
+    "Ursinho": "img/ursinho.png"
+  };
+
+  const mulherNamorados = {
+    "Brincos": "img/brinco.png",
+    "Colar": "img/colar.png",
+    "Perfume": "img/perfume.png",
+    "Jantar": "img/restaurante.png",
+    "Pix R$ 100": "img/pix.png",
+    "Flores": "img/flor.png",
+    "Chocolate": "img/chocolates.png",
+    "Ursinho": "img/ursinho.png"
+  };
+
+
+
 $(document).ready(function() {
     // Recebe os arrays de presentes do PHP
  

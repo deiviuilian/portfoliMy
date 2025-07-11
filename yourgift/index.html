@@ -50,52 +50,7 @@
             <button class="btn reset-btn">Recomeçar</button>
             <button class="btn back-btn gender" style="display: none"><img class="imgsimb" src="back.png" alt="aspiral"></button>
             <button class="btn back-btn roleta" style="display: none"><img class="imgsimb" src="back.png" alt="aspiral"></button>
-        </div>    
-        <?php
-            // Array com os presentes para homens
-            $presentes_homem = [
-                "Bebida" => "img/bebidas.png",
-                "Jogo" => "img/jogo.png",
-                "Camisa" => "img/camisa.png",
-                "Perfume" => "img/perfume.png",
-                "Pix R$ 100" => "img/pix.png",
-                "Colar" => "img/colar.png",
-                "Chapéu" => "img/chapeu.png",
-                "Pagar Ifood" => "img/ifood.png"
-            ];
-
-            $presentes_mulher = [
-                "Bolsa" => "img/bolsa.png",
-                "Jóia" => "img/joia.png",
-                "Perfume" => "img/perfume.png",
-                "Sapato/Roupa" => "img/sapato_roupa.png",
-                "Pix R$ 100" => "img/pix.png",
-                "Flor" => "img/flor.png",
-                "Chocolate" => "img/chocolates.png",
-                "Ursinho" => "img/ursinho.png"
-            ];
-
-            $mulher_namorados = [
-                "Brincos" => "img/brinco.png",
-                "Colar" => "img/colar.png",
-                "Perfume" => "img/perfume.png",
-                "Jantar" => "img/restaurante.png",
-                "Pix R$ 100" => "img/pix.png",
-                "Flores" => "img/flor.png",
-                "Chocolate" => "img/chocolates.png",
-                "Ursinho" => "img/ursinho.png"
-            ];
-            
-            // Convertendo arrays para JSON para uso no JavaScript
-            $presentes_homem_json = json_encode($presentes_homem);
-            $presentes_mulher_json = json_encode($presentes_mulher);
-            $mulher_namorados_json = json_encode($mulher_namorados);
-        ?>    
-        <script src="script.js"></script>
-        <script>
-            const presentesHomem = JSON.parse(<?php echo json_encode($presentes_homem_json); ?>);
-            const presentesMulher = JSON.parse(<?php echo json_encode($presentes_mulher_json); ?>);
-        </script>
+        </div> 
     </body>
     <footer>        				
         <div class="footer-text">
