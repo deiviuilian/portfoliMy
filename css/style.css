@@ -368,7 +368,7 @@ section:nth-child(odd) {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 .skill-tag {
@@ -990,4 +990,50 @@ footer {
 /* Opcional: esconder as divs de galeria ocultas */
 .project-gallery-hidden {
     display: none;
+}
+
+.tagorange{    
+    background: #ffa5003b !important;
+    border: 1px solid orange !important; 
+}
+
+.taggreen{
+    background: #0080002e !important;
+    border: 1px solid green !important;
+}
+
+.tagblue{
+    background: #0000ff2e !important;
+    border: 1px solid blue !important;
+}
+
+.tagecundary{
+    background: #7600ff42 !important;
+    border: 1px solid  var(--accent-secondary) !important;
+}
+
+.fontorange{
+    color: orange !important;  
+}
+
+.fontgreen{
+    color: green !important;
+}
+
+.fontblue{
+    color: blue !important;
+}
+
+.fontpadrao{
+    color: var(--accent-primary) !important;
+}
+
+.fontsecundary{
+    color: var(--accent-secondary) !important;
+}
+
+.fontlegend {
+    margin-top: 5px !important;
+    font-size: 7pt !important;
+    margin-bottom: 0px !important;
 }
